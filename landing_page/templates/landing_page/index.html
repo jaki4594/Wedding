@@ -63,7 +63,7 @@
                                                 <li><a href="elements.html">Element</a></li>
                                             </ul>
                                         </li> -->
-                                        <li><a href="contact.html">Contact Us</a></li>
+                                        <!-- <li><a href="contact.html">Contact Us</a></li> -->
                                     </ul>
                                 </nav>
                             </div>
@@ -89,13 +89,16 @@
                         <div class="col-xl-8 col-lg-6 col-md-8 ">
                             <div class="hero__caption">
                                 <span data-animation="fadeInLeft" data-delay=".3s">June 3</span>
-                                <h1 data-animation="fadeInLeft" data-delay=".5s" data-duration="2000ms">Dalilah<strong> & </strong> Zaki</h1>
-                                <p data-animation="fadeInLeft" data-delay=".9s">will get married</p>
+                                <h1 data-animation="fadeInLeft" data-delay=".5s" data-duration="2000ms">DALILAH & ZAKI</h1>
+                                <p data-animation="fadeInLeft" data-delay=".9s">will get married </p>
                             </div>
+                            <a href="#rsvp" class="rsvp"> RSVP NOW </a>
                         </div>
                     </div>
+                    
                 </div>
             </div>
+            
             <!-- Single Slider -->
             <div class="single-slider slider-height hero-overly d-flex align-items-center">
                 <div class="container">
@@ -103,26 +106,33 @@
                         <div class="col-xl-8 col-lg-6 col-md-8 ">
                             <div class="hero__caption">
                                 <span data-animation="fadeInLeft" data-delay=".3s">June 3</span>
-                                <h1 data-animation="fadeInLeft" data-delay=".5s" data-duration="2000ms">Dalilah<strong> & </strong> Zaki</h1>
+                                <h1 data-animation="fadeInLeft" data-delay=".5s" data-duration="2000ms">DALILAH & ZAKI</h1>
                                 <p data-animation="fadeInLeft" data-delay=".9s">will get married</p>
+                                
                             </div>
+                            <a href="#rsvp" class="rsvp"> RSVP NOW </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- <div style="width: 50%; margin: auto; text-align: center;"><a href="#rsvp" style="color: violet; text-align: center;"> RSVP </a></div> -->
     </div>
     <!-- Slider Area End-->
     <!--? Our Story Start -->
     <div class="Our-story-area story-padding">
+        
         <div class="container">
+            
             <!-- Section Tittle -->
             <div class="row d-flex justify-content-center">
+                
                 <div class="col-xl-7 col-lg-8">
                     <div class="section-tittle text-center mb-70">
+                        
                         <h2>Our Love Story​</h2>
-                        <img src="/static/assets/img/gallery/tittle_img.png" alt="">
-                        <p>Dalilah flirted and Zaki was seduced. Then they started to do everything together.</p>
+                        <img src="/static/assets/img/gallery/design1.png" alt="">
+                        <p>Dalilah flirted and Zaki was seduced. Then they started to do everything together.</p> 
                     </div>
                 </div>
             </div>
@@ -329,7 +339,7 @@
                     <div class="gift-caption text-center">
                         <h2>The Best Gift From You</h2>
                         <p>Will be your presentation in our wedding</p>
-                        <a href="#" class="btn btn-whit">resarve your Seat</a>
+                        <!-- <a href="#" class="btn btn-whit">resarve your Seat</a> -->
                     </div>
                 </div>
             </div>
@@ -337,12 +347,14 @@
     </section>
     <!-- Gift End -->
     <!--? Contact form Start -->
-    <div class="contact-form section-padding30 fix">
+    <div class="contact-form section-padding30 fix" id="rsvp">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-6">
                     <div class="form-wrapper">
-                        <form id="contact-form" action="#" method="POST">
+                        <form id="contact-form" action="" method="POST">
+                            {% csrf_token %}
+                            
                             <!-- section tittle -->
                             <div class="row ">
                                 <div class="col-lg-12">
@@ -352,18 +364,20 @@
                                     </div>
                                 </div>
                             </div>
+                            
                             <div class="row">
-                                <div class="col-lg-12">
+                                {{ form }}
+                                <!-- <div class="col-lg-12">
                                     <div class="form-box mb-30">
-                                        <input type="text" name="name" placeholder="Name">
+                                        <input id="name" type="text" name="name" placeholder="Name">
                                     </div>
-                                </div>
-                                <div class="col-lg-12">
+                                </div> -->
+                                <!-- <div class="col-lg-12">
                                     <div class="form-box subject-icon mb-30">
                                         <input type="Email" name="subject" placeholder="Email">
                                     </div>
-                                </div>
-                                <div class="col-lg-12 mb-30">
+                                </div> -->
+                                <!-- <div class="col-lg-12 mb-30">
                                     <div class="select-itms">
                                         <select name="select" id="select2">
                                             <option value="">1 Guest</option>
@@ -372,15 +386,18 @@
                                             <option value="">4 Guest</option>
                                         </select>
                                     </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="form-box message-icon mb-30">
-                                        <textarea name="message" id="message" placeholder="Your Message"></textarea>
-                                    </div>
-                                <div class="submit-info">
+                                </div> -->
+                                <div class="submit-info" style="margin-top: 20px;">
                                     <button class="btn" type="submit">Confirm now</button>
                                 </div>
-                                </div>
+                                <!-- <div class="col-lg-12">
+                                    <div class="form-box message-icon mb-30">
+                                        <textarea name="message" id="message" placeholder="Your Message (optional)"></textarea>
+                                    </div>
+                                    <div class="submit-info">
+                                        <button class="btn" type="submit">Confirm now</button>
+                                    </div>
+                                </div> -->
                             </div>
                         </form>
                         <!-- Shape inner Flower -->
@@ -511,6 +528,10 @@
         </div>
     </section> -->
     <!--? End map Area -->
+    <audio id="Player" autoplay loop>
+        <source src="/static/salut.mp3" type="audio/mp3"/>
+   </audio>
+   
 </main>
 <footer>
     <!-- Footer Start-->
