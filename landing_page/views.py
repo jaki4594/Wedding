@@ -3,7 +3,7 @@ from django.http import HttpResponse,HttpResponseRedirect
 from django.template import loader
 
 from .forms import GuestForm
-from .models import Guests
+from .models import Guests, Countdown
 def index(request):
     template = loader.get_template("landing_page/index.html")
     if request.method == 'POST':
@@ -21,3 +21,7 @@ def index(request):
     }
     return HttpResponse(template.render(context,request))
     # return render(request,template,context)
+
+def jaya(request):
+  ob=Countdown.objects.get(id=2)
+  return render(request,'index.html',{'ob':ob})

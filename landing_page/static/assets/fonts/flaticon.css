@@ -30,6 +30,7 @@ font-style: normal;
 margin-left: 20px;
 }
 
+/* .flaticon-wedding:before { content: "\f100"; } */
 .flaticon-chart:before { content: "\f100"; }
 .flaticon-speaker:before { content: "\f101"; }
 .flaticon-growth:before { content: "\f102"; }

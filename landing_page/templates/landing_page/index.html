@@ -164,16 +164,17 @@
                     <div class="section-tittle text-center mb-70">
                         <h2>Wedding Info</h2>
                         <img src="/static/assets/img/gallery/tittle_img.png" alt="">
-                        <p>You are invited to come to all three events </p>
+                        <p>You are invited to come to all two events </p>
                     </div>
                 </div>
             </div>
             <div class="row align-items-end">
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="single-card text-center mb-30">
+                <div class="col-xl-6 col-lg-4 col-md-6">
+                    <div class="single-card active text-center mb-30">
                         <div class="card-top">
-                            <span class="flaticon-chart"></span>
-                            <h4>Nikah</h4>
+                            <!-- <span class="flaticon-chart"></span> -->
+                            <img src="/static/assets/img/logo/arch.png" alt="" style="width: 46px; height: 46px; margin-bottom: 25px;">
+                            <h4>The Nikah</h4>
                         </div>
                         <div class="card-bottom">
                             <ul>
@@ -185,14 +186,15 @@
                             </ul>
                         </div>
                         <div class="card-buttons mt-30">
-                            <a href="#" class="btn card-btn1">Get Started</a>
+                            <a href="https://goo.gl/maps/DdUWPYqKQYPDNqEJ7" class="btn card-btn1">Get Direction</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="col-xl-6 col-lg-4 col-md-6">
                     <div class="single-card active text-center mb-30">
                         <div class="card-top">
-                            <span class="flaticon-project"></span>
+                            <!-- <span class="flaticon-project"></span> -->
+                            <img src="/static/assets/img/logo/wedding-ring.png" alt="" style="width: 46px; height: 46px; margin-bottom: 25px;">
                             <h4>The Reception</h4>
                         </div>
                         <div class="card-bottom">
@@ -205,11 +207,11 @@
                             </ul>
                         </div>
                         <div class="card-buttons mt-30">
-                            <a href="#" class="btn card-btn1">Get Started</a>
+                            <a href="https://goo.gl/maps/jAqnuHbmvUk1VeeZA" class="btn card-btn1">Get Direction</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6">
+                <!-- <div class="col-xl-4 col-lg-4 col-md-6">
                     <div class="single-card text-center mb-30">
                         <div class="card-top">
                             <span class="flaticon-award"></span>
@@ -228,7 +230,7 @@
                             <a href="#" class="btn card-btn1">Get Started</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -243,28 +245,27 @@
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <!-- Counter Up -->
                                 <div class="single-counter text-center">
-                                    <span class="counter">23</span>
+                                    <span class="counter" id="days">23</span>
                                     <p>days</p>
                                 </div>
                             </div>
                             <div class="col-lg-2 col-md-6 col-sm-6">
                                 <!-- Counter Up -->
                                 <div class="single-counter active text-center">
-                                    <span class="counter">15</span>
+                                    <span class="counter" id="hours">15</span>
                                     <p>hours</p>
                                 </div>
                             </div>
                             <div class="col-lg-2 col-md-6 col-sm-6">
                                 <!-- Counter Up -->
                                 <div class="single-counter text-center">
-                                    <span class="counter">46</span>
+                                    <span class="counter" id="minutes">46</span>
                                     <p>mins</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-6">
-                                <!-- Counter Up -->
                                 <div class="single-counter text-center">
-                                    <span class="counter">20</span>
+                                    <span class="counter" id="seconds">20</span>
                                     <p>secs</p>
                                 </div>
                             </div>
@@ -449,42 +450,6 @@
             </div>
         </div>
     </section>
-    <!-- Gallery-2 img Start-->
-    <!-- <div class="gallery-area2 fix">
-        <div class="container-fluid p-0">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="gallery-active owl-carousel">
-                        <div class="gallery-img">
-                            <a href="#"><img src="/static/assets/img/gallery/gallery01.png" alt=""></a>
-                        </div>
-                        <div class="gallery-img">
-                            <a href="#"><img src="/static/assets/img/gallery/gallery02.png" alt=""></a>
-                        </div>
-                        <div class="gallery-img">
-                            <a href="#"><img src="/static/assets/img/gallery/gallery03.png" alt=""></a>
-                        </div>
-                        <div class="gallery-img">
-                            <a href="#"><img src="/static/assets/img/gallery/gallery04.png" alt=""></a>
-                        </div>
-                        <div class="gallery-img">
-                            <a href="#"><img src="/static/assets/img/gallery/gallery05.png" alt=""></a>
-                        </div>
-                        <div class="gallery-img">
-                            <a href="#"><img src="/static/assets/img/gallery/gallery06.png" alt=""></a>
-                        </div>
-                        <div class="gallery-img">
-                            <a href="#"><img src="/static/assets/img/gallery/gallery07.png" alt=""></a>
-                        </div>
-                        <div class="gallery-img">
-                            <a href="#"><img src="/static/assets/img/gallery/gallery08.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Gallery-2 img End-->
     <!--? Start map Area-->
     <!-- <section class="contact-sections">
         <div class="d-area">
@@ -528,7 +493,7 @@
         </div>
     </section> -->
     <!--? End map Area -->
-    <audio id="Player" autoplay loop>
+    <audio id="Player" controls>
         <source src="/static/salut.mp3" type="audio/mp3"/>
    </audio>
    
@@ -536,63 +501,6 @@
 <footer>
     <!-- Footer Start-->
     <div class="footer-main" data-background="/static/assets/img/gallery/section_bg4.png">
-        <!-- <div class="footer-area footer-padding">
-            <div class="container">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-xl-2  col-lg-3 col-md-5 col-sm-6">
-                        <div class="single-footer-caption mb-50">
-                            <div class="single-footer-caption mb-30">
-                            
-                                <div class="footer-logo">
-                                    <a href="index.html"><img src="/static/assets/img/logo/logo2_footer.png" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- <div class="col-xl-3  col-lg-3 col-lg-2 col-md-5 col-sm-6">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>WEDDING INFO</h4>
-                                <ul>
-                                    <li><a href="#">Why Hire a Planner?</a></li>
-                                    <li><a href="#">How Can I Make An</a></li>
-                                    <li><a href="#">Appointment?</a></li>
-                                    <li><a href="#">How to Choose a Venue</a></li>
-                                    <li><a href="#">Event Catalogue</a></li>
-                                    <li><a href="#"> Accept</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2  col-lg-3 col-md-5 col-sm-6">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>ABOUT US</h4>
-                                <ul>
-                                    <li><a href="#">Bridesmaids</a></li>
-                                    <li><a href="#">November 22, 2020</a></li>
-                                    <li><a href="#">Groomsmen</a></li>
-                                    <li><a href="#">Groomsmen</a></li>
-                                    <li><a href="#">November 22, 2020</a></li>
-                                    <li><a href="#">JEWELRY</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2  col-lg-3 col-md-5 col-sm-6">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>LOCATION</h4>
-                                <ul>
-                                    <li><a href="#">Coloelib.com</a></li>
-                                    <li>+(123) 456 - 7890 - 456 35 W 46nd Street NY</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> -->
-                <!-- </div>
-            </div>
-        </div> -->
         <!-- footer-bottom area -->
         <div class="footer-bottom-area">
             <div class="container">
@@ -614,6 +522,29 @@
 </footer>
 
     <!-- JS here -->
+    <script>
+        var countDownDate = new Date("June 3, 2023 20:00:00").getTime();
+                            // date and time to end above
+
+        var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+    </script>        
 
     <script src="/static/assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <!-- Jquery, Popper, Bootstrap -->
