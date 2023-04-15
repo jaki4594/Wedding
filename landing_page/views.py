@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse,HttpResponseRedirect
 from django.template import loader
+from django.contrib import messages
 
 from .forms import GuestForm
 from .models import Guests, Countdown
@@ -13,6 +14,8 @@ def index(request):
             guests = form.cleaned_data['guests']
             message = form.cleaned_data['message']
             Guests.objects.create(name=name,number_of_guests=guests, message=message)
+            # messages.add_message(request, messages.INFO, "You have successfully registered!")
+            messages.error(request,'Thank you! You have been registered!')
             return HttpResponseRedirect('/landing_page/')
     else:
         form = GuestForm()

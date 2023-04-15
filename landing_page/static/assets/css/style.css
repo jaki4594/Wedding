@@ -5,13 +5,17 @@ html {
 }
 
 .rsvp{
-    background-color: #fb5a5c;
+    /* background-color: #fb5a5c; */
+    background-color: black;
     color: white;
-    padding: 14px 25px;
+    padding: 5px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    border-radius: 4px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-size: 12px !important;
+
 }
 
 .white-bg {
@@ -146,7 +150,8 @@ html {
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
+    font-family: Kollektif;
     font-weight: normal;
     font-style: normal
 }
@@ -158,7 +163,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Playfair Display", serif;
+    /* font-family: "Playfair Display", serif; */
+    font-family: Brittany;
     color: #212121;
     margin-top: 0px;
     font-style: normal;
@@ -167,12 +173,14 @@ h6 {
 }
 
 p {
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
+    font-family: Kollektif !important;
     color: #2e3c40;
     font-size: 16px;
     line-height: 30px;
     margin-bottom: 15px;
-    font-weight: normal
+    font-weight: normal;
+    padding-top: 20px;
 }
 
 .bg-img-1 {
@@ -413,7 +421,7 @@ hr {
 }
 
 .btn {
-    background: #ff2828;
+    background: black;
     text-transform: uppercase;
     color: #fff;
     font-size: 16px;
@@ -582,7 +590,7 @@ hr {
 }
 
 #scrollUp {
-    background: #ff2828;
+    background: black;
     height: 50px;
     width: 50px;
     right: 31px;
@@ -2202,45 +2210,45 @@ hr {
 
 .gift-padding {
     padding-top: 120px;
-    padding-bottom: 130px
+    padding-bottom: 30px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .gift-padding {
         padding-top: 120px;
-        padding-bottom: 130px
+        padding-bottom: 30px;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .gift-padding {
         padding-top: 100px;
-        padding-bottom: 100px
+        padding-bottom: 30px;
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .gift-padding {
         padding-top: 100px;
-        padding-bottom: 100px
+        padding-bottom: 30px;
     }
 }
 
 @media (max-width: 575px) {
     .gift-padding {
         padding-top: 100px;
-        padding-bottom: 100px
+        padding-bottom: 30px
     }
 }
 
 .section-padding30 {
-    padding-top: 195px;
+    padding-top: 100px;
     padding-bottom: 170px
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
     .section-padding30 {
-        padding-top: 195px;
+        padding-top: 100px;
         padding-bottom: 170px
     }
 }
@@ -2432,8 +2440,8 @@ hr {
 }
 
 .section-tittle h2 {
-    color: white;
-    text-shadow: -1px 0 #ffab00, 0 1px #ffab00, 1px 0 #ffab00, 0 -1px #ffab00;
+    color: black;
+    /* text-shadow: -1px 0 #ffab00, 0 1px #ffab00, 1px 0 #ffab00, 0 -1px #ffab00; */
     font-size: 40px;
     font-weight: 700;
     line-height: 1.3
@@ -2465,7 +2473,7 @@ hr {
 
 @media (max-width: 575px) {
     .section-tittle.tittle-form h2 {
-        font-size: 21px;
+        font-size: 30px;
         line-height: 1.3
     }
 }
@@ -2630,6 +2638,7 @@ hr {
 
 .header-sticky.sticky-bar.sticky .main-menu ul>li>a {
     padding: 26px 20px
+    /* padding: 0px; */
 }
 
 .mobile_menu {
@@ -2742,13 +2751,14 @@ hr {
 .slider-area .hero__caption span {
     /* color: #ffcf40; */
     color: #fff;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 22px;
     font-weight: 700;
-    font-family: "Barlow", sans-serif;
+    /* font-family: "Barlow", sans-serif; */
+    font-family: Brittany;
     position: relative;
     display: inline-block;
-    padding-left: 40px;
+    /* padding-left: 40px; */
     /* line-height: 2.1; */
     letter-spacing: 0.3em;
     position: relative
@@ -2768,38 +2778,51 @@ hr {
     }
 }
 
-.slider-area .hero__caption span::before {
+/* .slider-area .hero__caption span::before {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     top: 0;
-    background-image: url(../img/logo/logo3.png);
+    background-image: url(../img/logo/wedding-rings-gold.png);
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-}
+} */
 
 @font-face {
     font-family: Greek;
     src: url(../fonts/CAESAR.TTF);
 }
 
+@font-face {
+    font-family: Brittany;
+    src: url(../fonts/brittany_signature/BrittanySignature.ttf);
+}
+
+@font-face {
+    font-family: Kollektif;
+    src: url(../fonts/kollektif-cufonfonts/Kollektif.ttf);
+}
+
 .slider-area .hero__caption h1 {
     font-size: 65px;
-    font-weight: 900;
+    font-weight: 400;
     margin-bottom: 5px;
     /* background-image: linear-gradient(180deg, #fcb004, #ffab00, #fc6f50, #fb5a5c); */
     /* color: #ffcf40; */
     color: #fff;
-    font-family: "Barlow", sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-style: italic !important;
+    /* font-family: "Playfair Display", sans-serif; */
     /* font-family: Greek; */
-    /* letter-spacing: 0.4em; */
+    letter-spacing: 0.2em;
     line-height: 1.2;
     text-transform: capitalize;
     margin-bottom: 30px;
+    margin-top: 10px;
     /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
@@ -2878,7 +2901,8 @@ hr {
 .slider-area .hero__caption h1 strong {
     font-style: italic;
     font-size: 49px;
-    font-family: Greek;
+    /* font-family: Greek; */
+    font-family: 'Playfair Display', serif;
     font-weight: 400;
     padding: 0 7px 0 4px
 }
@@ -3126,7 +3150,7 @@ hr {
 
 .pricing-card-area .single-card.active {
     padding-bottom: 70px;
-    border: 1px solid #ff2828
+    border: 1px solid #e2e2e2;
 }
 
 .pricing-card-area .single-card.active .card-buttons {
@@ -3162,7 +3186,7 @@ hr {
 }
 
 .count-down-area .count-down-wrapper .single-counter span {
-    color: #fff;
+    color: black;
     font-size: 36px;
     line-height: 1;
     margin-bottom: 12px;
@@ -3174,7 +3198,7 @@ hr {
 
 .count-down-area .count-down-wrapper .single-counter p {
     font-size: 18px;
-    color: #fff;
+    color: black;
     line-height: 1;
     margin: 0;
     padding: 0;
@@ -3306,8 +3330,8 @@ hr {
     font-size: 70px;
     font-weight: 700;
     margin-bottom: 14px;
-    color: #fff;
-    font-family: "Playfair Display", serif;
+    color: black;
+    /* font-family: "Playfair Display", serif; */
     line-height: 1.2;
     text-transform: capitalize;
     margin-bottom: 14px
@@ -3334,10 +3358,13 @@ hr {
 }
 
 .gift-area .gift-caption p {
-    color: #fff;
-    font-size: 30px;
+    color: silver;
+    font-size: 25px;
+    font-style: italic;
     margin-bottom: 60px;
-    line-height: 1.3
+    line-height: 1.3;
+    margin-top: 60px;
+    letter-spacing: 1px;
 }
 
 @media (max-width: 575px) {
@@ -3360,9 +3387,10 @@ hr {
 
 .contact-form .form-wrapper {
     background: #fff;
-    padding: 125px 70px 115px 70px;
+    padding: 50px 70px 115px 70px;
     box-shadow: 0px 0px 86px 0px rgba(0, 0, 0, 0.06);
-    position: relative
+    position: relative;
+    border: 1px solid #e2e2e2;
 }
 
 .contact-form .form-wrapper #contact-form {
@@ -3471,6 +3499,7 @@ hr {
     border-radius: 5px;
     border: 1px solid #d9d9d9;
     margin-bottom: 25px;
+    margin-top: 30px;
 }
 
 .contact-form .form-wrapper .nice-select {
@@ -3627,8 +3656,8 @@ hr {
 }
 
 .footer-bottom-area .footer-border {
-    border-top: 1px solid #26282c;
-    padding: 33px 0px 33px
+    /* border-top: 1px solid #26282c; */
+    padding: 0px 0px 0px
 }
 
 .footer-bottom-area .footer-copy-right p {
