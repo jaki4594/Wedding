@@ -4,6 +4,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.errorlist{
+    color: red;
+}
+
 .rsvp{
     /* background-color: #fb5a5c; */
     background-color: black;
@@ -3001,6 +3005,12 @@ hr {
     background: #fbf7f3
 }
 
+.audio{
+    margin: auto;
+    padding: inherit;
+    text-align: center;
+}
+
 .Our-story-area {
     position: relative
 }
@@ -3218,7 +3228,7 @@ hr {
 
 .gallery-area .single-gallery .gallery-img {
     position: relative;
-    height: 565px;
+    height: 350px;
     background-size: cover;
     background-repeat: no-repeat
 }
@@ -3231,7 +3241,7 @@ hr {
     position: absolute;
     bottom: 0;
     align-items: end;
-    background: #e72526;
+    background: black;
     display: flex;
     padding: 32px 97px 32px 40px;
     opacity: 0;

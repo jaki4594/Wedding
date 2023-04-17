@@ -9,14 +9,19 @@ def index(request):
     template = loader.get_template("landing_page/index.html")
     if request.method == 'POST':
         form = GuestForm(request.POST)
-        if form.is_valid():
-            name = form.cleaned_data['name']
-            guests = form.cleaned_data['guests']
-            message = form.cleaned_data['message']
-            Guests.objects.create(name=name,number_of_guests=guests, message=message)
-            # messages.add_message(request, messages.INFO, "You have successfully registered!")
-            messages.error(request,'Thank you! You have been registered!')
+        try:
+            if form.is_valid():
+                name = form.cleaned_data['name']
+                guests = form.cleaned_data['guests']
+                message = form.cleaned_data['message']
+                Guests.objects.create(name=name,number_of_guests=guests, message=message)
+                # messages.add_message(request, messages.INFO, "You have successfully registered!")
+                messages.error(request,'Thank you! You have been registered!')
+                return HttpResponseRedirect('/landing_page/')
+        except Exception as e:
+            messages.error(request, str(e))
             return HttpResponseRedirect('/landing_page/')
+        
     else:
         form = GuestForm()
     context = {
