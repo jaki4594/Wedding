@@ -3006,7 +3006,8 @@ hr {
 }
 
 .audio{
-    margin: auto;
+    /* margin: auto; */
+    margin-top: -50px;
     padding: inherit;
     text-align: center;
 }
@@ -3391,7 +3392,9 @@ hr {
 
 @media (max-width: 575px) {
     .gift-area .gift-caption p {
-        font-size: 18px
+        font-size: 17px;
+        padding: 5px;
+        line-height: 2;
     }
 }
 
@@ -3517,7 +3520,7 @@ hr {
     height: 60px;
     width: 100%;
     border: 0;
-    color: #a3a3a3;
+    color: lightgray;
     font-weight: 500;
     text-transform: capitalize;
     padding-top: 10px;
@@ -3526,7 +3529,7 @@ hr {
 }
 
 .contact-form .form-wrapper .nice-select .option {
-    color: #a3a3a3
+    color: lightgray;
 }
 
 .contact-form .form-wrapper .nice-select::after {
@@ -3574,7 +3577,9 @@ hr {
 
 @media (max-width: 575px) {
     .contact-form .form-wrapper textarea {
-        padding: 30px 42px
+        color: lightgray;
+        /* padding: 0px; */
+        /* padding: 30px 42px */
     }
 }
 
