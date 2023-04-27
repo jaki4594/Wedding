@@ -2246,7 +2246,7 @@ hr {
 }
 
 .section-padding30 {
-    padding-top: 100px;
+    /* padding-top: 100px; */
     padding-bottom: 170px
 }
 
@@ -2273,14 +2273,14 @@ hr {
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .section-padding30 {
-        padding-top: 65px;
+        padding-top: 85px;
         padding-bottom: 100px
     }
 }
 
 @media (max-width: 575px) {
     .section-padding30 {
-        padding-top: 65px;
+        padding-top: 85px;
         padding-bottom: 100px
     }
 }
