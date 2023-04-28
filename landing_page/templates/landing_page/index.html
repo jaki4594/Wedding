@@ -26,6 +26,28 @@
     <link rel="stylesheet" href="/static/assets/css/style.css">
 </head>
 <body>
+<!-- Modal -->
+<div class="modal" tabindex="-1" role="dialog" id="memberModal" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" style="text-align: center;">Wedding Announcement</h5>
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button> -->
+        </div>
+        <div class="modal-body">
+          <p style="text-align: center;">“And of His signs is that He created for you from yourselves mates that you may find tranquillity in them, and He placed between you affection and mercy. Indeed in that are signs for a people who give thought.”</p>
+            <p style="text-align: center; padding: 20px;">(Surah Ar-Rum, 30:21)</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="play()">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+
 <!-- Preloader Start -->
 <div id="preloader-active">
     <div class="preloader d-flex align-items-center justify-content-center">
@@ -37,6 +59,7 @@
         </div>
     </div>
 </div>
+
 <!-- Preloader Start -->
 <!-- <header>
     <div class="header-area">
@@ -67,6 +90,7 @@
     </div>
 </header> -->
 <main>
+    
     
     <!--? Slider Area Start-->
     <div class="slider-area">
@@ -108,11 +132,11 @@
         <!-- <div style="width: 50%; margin: auto; text-align: center;"><a href="#rsvp" style="color: violet; text-align: center;"> RSVP </a></div> -->
     </div>
     <div class="audio">
-        <embed src="/static/salut.mp3" loop="true" autostart="true" width="2" height="0">
-        <!-- <audio id="Player" controls autoplay muted>
+        <!-- <embed src="/static/salut.mp3" loop="true" autostart="true" width="2" height="0"> -->
+        <audio controls autoplay loop="" id="lagus" style="display: none;">
             <source src="/static/salut.mp3" type="audio/mp3"/>
             Your browser does not support audio element
-        </audio> -->
+        </audio>
     </div>
     <!-- Slider Area End-->
     <!--? Our Story Start -->
@@ -507,6 +531,24 @@
 
     <!-- JS here -->
     <script>
+        // var audio = document.getElementById("lagus");
+        // audio.play();
+
+        // var loader = document.getElementById("loader");
+
+		// window.addEventListener("load", function() {
+		// 	loader.style.display = "none";
+
+		// 	Swal.fire({
+		// 		icon: 'info',
+		// 		title: '<div class="showBM"><div class="oswald">sila matikan\n~ DARK MODE ~</div><div class="f16px">pada “setting browser” anda untuk <span style="color: #155e37">TAMPILAN TERBAIK</span>, JIKA anda gunakan peranti :<br><hr><span style="color: #5e1a15">“Samsung | Vivo | Huawei | Oppo”</span><br><hr>Abaikan jika anda guna browser<br><span style="color: #155e37">“Safari @ Chrome”</span><br>atau kotak popup ini berwarna putih</div></div>' +
+		// 			'<div class="showENG"><div class="oswald">kindly switch off\n~ DARK MODE ~</div><div class="f16px">in browser setting for <span style="color: #155e37">BEST DISPLAY</span> of ecard if you are using below device :<br><hr><span style="color: #5e1a15">“Samsung | Vivo | Huawei | Oppo”</span><br><hr>Kindly ignore if currently using<br><span style="color: #155e37">“Safari @ Chrome”</span><br>or this popup box color is white</div></div>'
+		// 	}).then(function play() {
+		// 		var audio = document.getElementById("lagus");
+		// 		audio.play();
+		// 	});
+		// })
+
         var countDownDate = new Date("June 3, 2023 20:00:00").getTime();
                             // date and time to end above
 
@@ -528,6 +570,13 @@
             document.getElementById("demo").innerHTML = "EXPIRED";
         }
         }, 1000);
+
+        // window.onload = function() {
+        //     var audio = document.getElementById("lagus");
+		// 	audio.play();
+        // };
+
+        
     </script>        
 
     <script src="/static/assets/js/vendor/modernizr-3.5.0.min.js"></script>
@@ -567,6 +616,24 @@
     <!-- Jquery Plugins, main Jquery -->	
     <script src="/static/assets/js/plugins.js"></script>
     <script src="/static/assets/js/main.js"></script>
-    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#memberModal').modal('toggle');
+        });
+        function play() {
+            var audio = document.getElementById("lagus");
+            audio.play();
+        }
+        // $(document).ready(function(){
+        //     $('#memberModal').modal('toggle');
+        //     $('#memberModal').modal({backdrop: 'static', keyboard: false});
+        //     var audio = document.getElementById("lagus");
+        // audio.play();
+        // });
+        // $(window).on('load', function() {
+        //     $('#memberModal').modal('show');
+        //     $('#memberModal').modal('toggle');
+        // });
+    </script>
 </body>
 </html>
