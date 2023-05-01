@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse,HttpResponseRedirect
 from django.template import loader
 from django.contrib import messages
-
+from django.shortcuts import redirect
 from .forms import GuestForm
 from .models import Guests, Countdown
 def index(request):
@@ -33,3 +33,8 @@ def index(request):
 def jaya(request):
   ob=Countdown.objects.get(id=2)
   return render(request,'index.html',{'ob':ob})
+
+def view_404(request, exception=None):
+    # make a redirect to homepage
+    # you can use the name of url or just the plain link
+    return redirect('/landing_page/')
