@@ -17,10 +17,10 @@ def index(request):
                 Guests.objects.create(name=name,number_of_guests=guests, message=message)
                 # messages.add_message(request, messages.INFO, "You have successfully registered!")
                 messages.error(request,'Thank you! You have been registered!')
-                return HttpResponseRedirect('/landing_page/')
+                return HttpResponseRedirect('/landing_page/#calendar')
         except Exception as e:
             messages.error(request, str(e))
-            return HttpResponseRedirect('/landing_page/')
+            return HttpResponseRedirect('/landing_page/#rsvp')
         
     else:
         form = GuestForm()
