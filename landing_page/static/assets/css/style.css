@@ -21,7 +21,20 @@ html {
     font-size: 12px !important;
 
 }
+:host(.atcb-dark){
+    --btn-background:black !important;
+    --btn-text: white !important;
 
+}
+
+.atcb-button{
+    font-family: inherit !important;
+    text-transform: uppercase !important;
+}
+
+.atcb-text{
+    color: white;
+}
 .white-bg {
     background: #ffffff
 }
