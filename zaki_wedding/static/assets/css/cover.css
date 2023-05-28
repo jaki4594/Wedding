@@ -9,14 +9,35 @@ a:hover {
   color: #fff;
 }
 
+@font-face {
+  font-family: Allison;
+  src: url(../fonts/Allison-Regular.ttf);
+}
+
+.cursive{
+  font-family: Allison;
+  font-size:30px !important;
+  /* color: #E1C158; */
+  font-weight: 600;
+}
+
+.para{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #333;
+  color: #fff;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
+  background-color: #E1C158;
   border: .05rem solid #fff;
+  font-family: "Open Sans", Roboto, "Helvetica Neue", Helvetica, Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-size: 15px;
+  /* margin: 20px; */
+  /* margin-bottom: 20px; */
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 0.5px rgba(50, 50, 93, .17), 0 2px 5px 0 rgba(50, 50, 93, .1), 0 1px 1.5px 0 rgba(0, 0, 0, .07), 0 1px 2px 0 rgba(0, 0, 0, .08), 0 0 0 0 transparent !important;
 }
 
 
@@ -27,8 +48,25 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  /* padding:10px; */
+  background-color: #A6B697;
+  background-image: url(../img/trees.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
+
+/* .div-wrapper {
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+
+.div-wrapper img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+} */
 
 body {
   display: -ms-flexbox;
@@ -38,14 +76,47 @@ body {
   -webkit-box-pack: center;
   justify-content: center;
   color: #fff;
+  
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  box-shadow:inset 0 0 5rem rgba(122,135,111, .5);
+}
+
+.corner {
+  position: absolute;
+  background: #444;
+  width: 20px;
+  height: 20px
+}
+.TL {
+  top: -10px;
+  left: -10px
+}
+.TR {
+  top: -10px;
+  right: -10px
+}
+.BL {
+  bottom: -10px;
+  left: -10px
+}
+.BR {
+  bottom: -10px;
+  right: -10px
 }
 
 .cover-container {
   max-width: 42em;
+  border-style: solid !important;
+  border:#E1C158;
+  background-image: url(../img/trees2.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
+.frame{
+  border: gold;
+}
 
 /*
  * Header
@@ -55,7 +126,14 @@ body {
 }
 
 .masthead-brand {
+  background: rgba(255, 255, 255, .2);
+  backdrop-filter: blur(5px);
   margin-bottom: 0;
+  margin-right: -16px;
+  margin-left: -16px;
+  margin-top: -16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .nav-masthead .nav-link {
@@ -82,7 +160,8 @@ body {
 
 @media (min-width: 48em) {
   .masthead-brand {
-    float: left;
+    color: #fff;
+    /* float: left ; */
   }
   .nav-masthead {
     float: right;
@@ -94,11 +173,14 @@ body {
  * Cover
  */
 .cover {
-  padding: 0 1.5rem;
+  /* padding: 0 1.5rem; */
+  padding: 10px;
 }
 .cover .btn-lg {
-  padding: .75rem 1.25rem;
-  font-weight: 700;
+  /* padding: .75rem 1.25rem; */
+  padding: 8px 15px 8px 15px;
+  /* font-weight: 700; */
+  /* margin-top: 20px; */
 }
 
 

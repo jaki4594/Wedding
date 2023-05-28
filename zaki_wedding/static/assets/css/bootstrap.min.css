@@ -66,6 +66,10 @@ nav,
 section {
     display: block
 }
+@font-face {
+    font-family: Allison;
+    src: url(../fonts/Allison-Regular.ttf);
+}
 
 body {
     margin: 0;
@@ -99,6 +103,7 @@ h6 {
 }
 
 p {
+    font-family: Allison !important;
     margin-top: 0;
     margin-bottom: 1rem
 }
@@ -424,7 +429,9 @@ h6 {
 }
 
 .lead {
-    font-size: 1.25rem;
+    /* font-family: Allison !important; */
+    /* font-family:Georgia, 'Times New Roman', Times, serif !important; */
+    font-size: 13px;
     font-weight: 300
 }
 
@@ -2592,7 +2599,7 @@ textarea.form-control {
     font-weight: 400;
     text-align: center;
     white-space: nowrap;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'landing_page.apps.LandingPageConfig',
+    'zaki_wedding.apps.ZakiWeddingConfig'
 ]
 
 MIDDLEWARE = [
