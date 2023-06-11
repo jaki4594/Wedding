@@ -23,6 +23,7 @@ a:hover {
 
 .para{
   font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
 }
 /* Custom default button */
 .btn-secondary,
@@ -49,7 +50,7 @@ html,
 body {
   height: 100%;
   /* padding:10px; */
-  background-color: #A6B697;
+  /* background-color: #A6B697; */
   background-image: url(../img/trees.png);
   background-size:contain;
   background-repeat: no-repeat;
@@ -75,10 +76,10 @@ body {
   -ms-flex-pack: center;
   -webkit-box-pack: center;
   justify-content: center;
-  color: #fff;
-  
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow:inset 0 0 5rem rgba(122,135,111, .5);
+  /* color: #fff; */
+  color: #444;
+  /* text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .95); */
+  box-shadow:inset 0 5rem 5rem rgba(122,135,111, .75);
 }
 
 .corner {
@@ -127,7 +128,8 @@ body {
 
 .masthead-brand {
   background: rgba(255, 255, 255, .2);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   margin-bottom: 0;
   margin-right: -16px;
   margin-left: -16px;
