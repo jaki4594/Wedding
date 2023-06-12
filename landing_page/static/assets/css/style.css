@@ -182,7 +182,7 @@ h5,
 h6 {
     /* font-family: "Playfair Display", serif; */
     font-family: Brittany;
-    color: #212121;
+    color: #0e5d30;
     margin-top: 0px;
     font-style: normal;
     font-weight: 500;
@@ -192,7 +192,7 @@ h6 {
 p {
     /* font-family: "Roboto", sans-serif; */
     font-family: Kollektif !important;
-    color: #2e3c40;
+    color: #0e5d30;
     font-size: 16px;
     line-height: 30px;
     margin-bottom: 15px;
@@ -438,7 +438,7 @@ hr {
 }
 
 .btn {
-    background: black;
+    background: #0e5d30;
     text-transform: uppercase;
     color: #fff;
     font-size: 13px;
@@ -608,7 +608,7 @@ hr {
 }
 
 #scrollUp {
-    background: black;
+    background: #0e5d30;
     height: 50px;
     width: 50px;
     right: 31px;
@@ -2459,7 +2459,7 @@ hr {
 }
 
 .section-tittle h2 {
-    color: black;
+    color: #0e5d30;
     /* text-shadow: -1px 0 #ffab00, 0 1px #ffab00, 1px 0 #ffab00, 0 -1px #ffab00; */
     font-size: 40px;
     font-weight: 700;
@@ -2763,6 +2763,13 @@ hr {
     background-size: cover
 }
 
+.slider-area-2 {
+    background-image: url(../img/zaki/bali2.jpeg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover
+}
+
 .slider-area .hero__caption {
     overflow: hidden
 }
@@ -2989,7 +2996,7 @@ hr {
 .hero-overly::before {
     position: absolute;
     content: "";
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     /* height: 0%; */
     left: 0;
@@ -3143,14 +3150,14 @@ hr {
 }
 
 .pricing-card-area .single-card .card-top h4 {
-    color: #2e3c40;
+    color: #0e5d30;
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 26px
 }
 
 .pricing-card-area .single-card .card-bottom ul li {
-    color: #636363;
+    color: #0e5d30;
     font-weight: 300;
     margin-bottom: 26px;
     font-size: 16px
@@ -3212,7 +3219,7 @@ hr {
 }
 
 .count-down-area .count-down-wrapper .single-counter span {
-    color: black;
+    color: #0e5d30;
     font-size: 36px;
     line-height: 1;
     margin-bottom: 12px;
@@ -3224,7 +3231,7 @@ hr {
 
 .count-down-area .count-down-wrapper .single-counter p {
     font-size: 18px;
-    color: black;
+    color: #0e5d30;
     line-height: 1;
     margin: 0;
     padding: 0;
@@ -3313,7 +3320,7 @@ hr {
 }
 
 .gallery-area .single-gallery .thumb-content-box .thumb-content a {
-    color: #fff;
+    color: #0e5d30;
     width: 30px;
     height: 30px;
     line-height: 30px;
@@ -3356,7 +3363,7 @@ hr {
     font-size: 70px;
     font-weight: 700;
     margin-bottom: 14px;
-    color: black;
+    color: #0e5d30;
     /* font-family: "Playfair Display", serif; */
     line-height: 1.2;
     text-transform: capitalize;
@@ -3384,7 +3391,7 @@ hr {
 }
 
 .gift-area .gift-caption p {
-    color: silver;
+    color: #0e5d30;
     font-size: 25px;
     font-style: italic;
     margin-bottom: 60px;

@@ -30,6 +30,13 @@ def index(request):
     return HttpResponse(template.render(context,request))
     # return render(request,template,context)
 
+def home(request):
+    template = loader.get_template("landing_page/home.html")
+    context = {
+        "message": "Hello",
+    }
+    return HttpResponse(template.render(context,request))
+
 def jaya(request):
   ob=Countdown.objects.get(id=2)
   return render(request,'index.html',{'ob':ob})
